@@ -1,0 +1,25 @@
+.main {
+    background-color: #282c34;
+    margin: 153px 0 0 0;
+    width: 100%;
+    // .main_wrapper
+    &_wrapper {
+        margin: 80px auto;
+    }
+
+    // .main_title
+    &_title {
+        font-size: 45px;
+        font-weight: bold;
+        color: #61dafb;
+        text-align: center;
+    }
+
+    // .main_about
+    &_about {
+        padding: 20px 0 0 0;
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+    }
+}

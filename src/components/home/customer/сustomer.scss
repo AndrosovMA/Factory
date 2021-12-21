@@ -1,0 +1,117 @@
+._container {
+    //указан в index.scss
+}
+
+.customer {
+    width: 100%;
+    margin: 20px 0 20px 0;
+
+    // .customer__wrapper
+    &__wrapper {
+        display: flex;
+        //box-shadow: 3px 1px 80px #6d6d6d;
+        box-shadow: 3px 1px 120px #6d6d6d42;
+        display: flex;
+        @media (max-width: $md2) {
+            flex-direction: column;
+        }
+    }
+
+    // .customer__left-side
+    &__left-side {
+        flex: 0 1 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    //customer__right-side
+    &__right-side {
+        flex: 0 1 50%;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+
+        &:hover .hover-right-side {
+            transform: translate(0%, 0);
+        }
+
+        @media (max-width: $md2) {
+            display: none;
+        }
+    }
+}
+
+
+.header-left-side {
+    padding: 20px 0 20px 0;
+    color: #6e6e6e;
+    font-weight: bold;
+    font-size: 22px;
+    height: 100%;
+    transition: all 0.8s ease 0s;
+
+    &:hover {
+        color: black;
+        text-decoration-line: underline;
+    }
+}
+
+.body-left-side {
+    padding: 0 10px 0 0;
+    color: #6e6e6e;
+}
+
+.body-left-side ol {
+    margin-left: 20px;
+}
+
+.body-left-side li {
+    padding: 10px 0 20px 0;
+
+    &:hover {
+        color: black;
+    }
+}
+
+.info-right-side {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    background-image: url("./img/factory_3.png");
+    background-size:cover;
+    background-position-x: center;
+}
+
+.hover-right-side {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    transform: translate(0, -100%);
+    transition: transform 0.3s ease 0s;
+
+    border: 5px solid #f68038;
+    background-color: rgba(0, 0, 0, 0.73);
+    padding: 15px;
+    flex-direction: column;
+    color: #fff;
+    background-image: url("./img/factory_2.png");
+    background-size:cover;
+    background-position-x: center;
+
+        & span {
+            font-family: "Roboto";
+            font-size: 25px;
+            margin: 40px auto;
+            color: #f68038;
+
+            text-transform: uppercase;
+            background: linear-gradient(45deg, #f68038 33%, #5ba4f1 66%, #8AA9D6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: table;
+            font-weight: 900;
+        }
+}

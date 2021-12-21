@@ -1,0 +1,41 @@
+.contactInformation-wrapper {
+    width: 100%;
+    margin-top: 154px;
+}
+
+.contactInformation-section {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 1px 120px #6d6d6d42;
+
+    // .contactInformation-section__header
+    &__header {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    // .contactInformation-section__body
+    &__body {
+        width: 100%;
+        padding: 10px 0;
+
+        form input {
+            display: block;
+        }
+
+        form label {
+            display: block;
+            padding: 10px 0 0 0;
+        }
+        form div {
+            display: block;
+            padding: 0 0 0 0;
+            color: red;
+        }
+    }
+}
+
+._container {
+}
